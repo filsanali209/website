@@ -80,3 +80,25 @@ nav ul li a:hover{
   border-radius: 3px;
   padding: 8px;
 }
+.owners{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.owner-1{
+  flex-grow: 1;
+  text-align: center;
+  width: 50%;
+}
+.owner-2{
+  flex-grow: 1;
+  text-align: center;
+  width: 50%;
+
+
+}
+.owner-1 img, .owner-2 img{
+  width: 60%;
+  height: 
+  50%;
+}
