@@ -9,11 +9,12 @@
 
 body{
   background-size: contain;
-  background-color: rgb(112, 52, 28);
+  background-color: rgb(45, 44, 44);
   display: block;
   font-family: 'Times New Roman', Times, serif;
   line-height: 1;
   color: rgb(246, 241, 241);
+  text-align: center;
   
   
 }
@@ -84,7 +85,7 @@ nav ul li a:hover{
 
 .main-content{
   padding-top: 120px;
-  padding-bottom: 300px;
+  padding-bottom: 277px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,12 +123,10 @@ nav ul li a:hover{
 }
 .owner-1{
   flex-grow: 1;
-  text-align: center;
   width: 50%;
 }
 .owner-2{
   flex-grow: 1;
-  text-align: center;
   width: 50%;
 
 
@@ -139,25 +138,37 @@ nav ul li a:hover{
 }
 
 #reviews{
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 50px;
+  background-color: rgba(244, 173, 115, 0.449);
 }
 #reviews h2{
-
-  text-align: center;
+  font-size: xx-large;
 }
 
-.cols{
+.row-a, .row-b{
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 40px;
-  font-size: large;
+  align-items: center;
+  margin: 40px ;
+  font-size: larger;
+  
+
 
 }
 .col-1, .col-2, .col-3, .col-4{
-  padding: 20px;
+  padding: 20px 50px;
+  width: 50%;
+  height: 200px;
   border: 1px solid;
   font-size: larger;
+  text-align: left;
+  
+}
+.col-1 i, .col-2 i, .col-3 i, .col-4 i{
+  text-transform: uppercase;
+}
+.col-1 p, .col-2 p, .col-3 p, .col-4 p{
+  padding: 10px;
 }
