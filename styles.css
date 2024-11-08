@@ -8,15 +8,19 @@
 
 
 body{
-  background-image: url('images/backgrounds/restaurant-3.jpeg');
   background-size: contain;
-  background-color: rgb(229, 208, 182);
+  background-color: rgb(112, 52, 28);
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
   color: rgb(246, 241, 241);
   
   
+}
+.bg-fullscreen{
+  background: url('images/backgrounds/restaurant-3.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
 }
 header{
   display: flex;
@@ -57,7 +61,9 @@ font-size: large;
 
 }
 nav ul li a:hover{
+  color: rgb(234, 209, 175);
   text-decoration: underline;
+  color: rgb(234, 209, 175);
 }
 
 .social-media-links{
@@ -101,10 +107,12 @@ nav ul li a:hover{
   background-color: transparent;
   background-size: cover;
 }
-.main-content button:hover{
+.main-content button:hover a{
+  color: rgb(234, 209, 175);
   text-decoration: underline;
-  color: white;
+  color: rgb(234, 209, 175);
 }
+
 
 .owners{
   display: flex;
@@ -127,4 +135,21 @@ nav ul li a:hover{
   width: 60%;
   height: 50%;
   position: relative;
+}
+
+#reviews{
+  margin-top: 30px;
+}
+#reviews h2{
+
+  text-align: center;
+}
+
+.cols{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 40px;
+  font-size: large;
+
 }
