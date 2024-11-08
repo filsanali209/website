@@ -6,6 +6,7 @@
 
 
 
+
 body{
   background-image: url('images/backgrounds/restaurant-3.jpeg');
   background-size: contain;
@@ -18,12 +19,17 @@ body{
   
 }
 header{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
+  padding: 10px;
+  position: sticky;
+  top: 0;
 }
 nav{
-position: sticky;
 width: 100%; 
-padding: 20px;
+padding: 10px;
 display: flex;
 align-items: center;
 flex-direction: row;
@@ -35,7 +41,7 @@ nav a img{
 }
 nav ul{
   width: 100%;
-  margin: 20px;
+  margin: 10px;
   list-style-type: none;
   justify-content: space-between;
 
@@ -51,15 +57,31 @@ font-size: large;
 
 }
 nav ul li a:hover{
-  background-color: rgb(200, 198, 198);
-  color: black;
+  text-decoration: underline;
 }
+
+.social-media-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.social-media-links-item{
+  width: 40px;
+  padding: 20px;
+}
+.fa-brands{
+  color: white;
+}
+
 .main-content{
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 .main-content p{
   padding: 10px;
@@ -68,18 +90,22 @@ nav ul li a:hover{
 .main-content button{
   font-size: large;
   background-color: transparent;
-  margin-top: 10px;
+  margin-top: 5px;
+  border: 2px  rgb(200, 198, 198) solid;
+  border-radius: 3px;
+  padding: 10px;
 }
 .main-content button a{
   text-decoration: none;
-  color: rgb(200, 198, 198);
+  color: rgb(255, 255, 255);
   background-color: transparent;
   background-size: cover;
-  
-  border: 2px  rgb(200, 198, 198) solid;
-  border-radius: 3px;
-  padding: 8px;
 }
+.main-content button:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 .owners{
   display: flex;
   flex-direction: row;
@@ -99,6 +125,6 @@ nav ul li a:hover{
 }
 .owner-1 img, .owner-2 img{
   width: 60%;
-  height: 
-  50%;
+  height: 50%;
+  position: relative;
 }
