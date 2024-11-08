@@ -11,7 +11,7 @@ body{
   background-size: contain;
   background-color: rgb(112, 52, 28);
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1;
   color: rgb(246, 241, 241);
   
@@ -57,7 +57,8 @@ margin: 30px;
 nav ul li a{
 text-decoration: none;
 color: rgb(252, 250, 250);
-font-size: large;
+font-size: larger;
+
 
 }
 nav ul li a:hover{
@@ -82,12 +83,12 @@ nav ul li a:hover{
 }
 
 .main-content{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  
 }
 .main-content p{
   padding: 10px;
@@ -138,7 +139,9 @@ nav ul li a:hover{
 }
 
 #reviews{
-  padding: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 #reviews h2{
 
@@ -152,4 +155,9 @@ nav ul li a:hover{
   margin: 40px;
   font-size: large;
 
+}
+.col-1, .col-2, .col-3, .col-4{
+  padding: 20px;
+  border: 1px solid;
+  font-size: larger;
 }
