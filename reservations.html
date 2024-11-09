@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/d49d7780b4.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -25,6 +26,7 @@
         <li><a href="index.html#contact">Contact Us</a></li>
       </ul>
     </nav>
+
     <div class="social-media-links">
       <div class="social-media-links-item">
         <a href="https://www.tiktok.com/@fallow_restaurant?lang=en">
@@ -52,37 +54,74 @@
 
 
   <section id="Reservations">
-    <h2>Make a Booking</h2>
-    <p>We are happy to accommodate dietary requirements. Please just make a note in your reservation or let us know upon arrival.  Lancaster’s is on ground level, with an accessible bathroom situated on the same floor.</p>
-    <div>
-      <label for="date">Choose a date:</label>
-      <input type="date" required>
+    <div class="res-container">
+      <img src="images/logos/forkandknife.png" width="200" height="50">
+      <h2>Reservations</h2>
     </div>
-    <div>
-      <label for="time">Choose a time:</label>
-        <select name="time" id="time">
-          <option value="1100">11:00 AM</option>
-          <option value="1100">11:30 AM</option>
-          <option value="1100">12:00 AM</option>
-          <option value="1100">12:30 AM</option>
-        </select>
+    <p class="info">We are happy to accommodate dietary requirements. <br> Please just make a note in your reservation or let us know upon arrival. <br> Lancaster’s is on ground level, with an accessible bathroom situated on the same floor.</p>
+    <div class="res-section">
+      <p>BOOK A TABLE</p>
+      <div class="inputs-for-res">
+        <div class="date-input">
+          <label for="date">Date:</label>
+          <input type="date" required>
+        </div>
+        <div class="time-input">
+          <label for="time">Time:</label>
+            <select name="time" id="time">
+              <option value="0800">8:00 AM</option>
+              <option value="0830">8:30 AM</option>
+              <option value="0900">9:00 AM</option>
+              <option value="0930">9:30 AM</option>
+              <option value="1000">10:00 AM</option>
+              <option value="1030">10:30 AM</option>
+              <option value="1100">11:00 AM</option>
+              <option value="1130">11:30 AM</option>
+              <option value="1200">12:00 AM</option>
+              <option value="1230">12:30 AM</option>
+              <option value="1300">1:00 PM</option>
+              <option value="1330">1:30 PM</option>
+              <option value="1400">2:00 PM</option>
+              <option value="1430">2:30 PM</option>
+              <option value="1500">3:00 PM</option>
+              <option value="1530">3:30 PM</option>
+              <option value="1600">4:00 PM</option>
+              <option value="1630">4:30 PM</option>
+              <option value="1700">5:00 PM</option>
+              <option value="1730">5:30 PM</option>
+              <option value="1800">6:00 PM</option>
+              <option value="1830">6:30 PM</option>
+              <option value="1900">7:00 PM</option>
+              <option value="1930">7:30 PM</option>
+              <option value="2000">8:00 PM</option>
+              <option value="2030">8:30 PM</option>
+              <option value="2100">9:00 PM</option>
+              <option value="2130">9:30 PM</option>
+              <option value="2200">10:00 PM</option>
+            </select>
+        </div>
+        <div class="partysize-input">
+          <label for="party-size">Party size</label>
+            <select name="party-size" id="party-size">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+        </div>
+      </div>
+      <button class="next-button">
+        Next <i 
+        class="fa-solid fa-arrow-right">
+        </i>
+      </button>
     </div>
-    <div>
-      <label for="party-size">Number of people</label>
-        <select name="party-size" id="party-size">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-    </div>
-
   </section>
 </body>
 </html>
