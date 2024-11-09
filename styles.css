@@ -161,7 +161,7 @@ nav ul li a:hover{
   padding: 20px 50px;
   width: 50%;
   height: 200px;
-  border: 1px solid;
+  
   font-size: larger;
   text-align: left;
   
@@ -172,3 +172,35 @@ nav ul li a:hover{
 .col-1 p, .col-2 p, .col-3 p, .col-4 p{
   padding: 10px;
 }
+.col-1, .col-4{
+ background-color:rgba(146, 105, 72, 0.449) ;
+}
+.col-2, .col-3{
+ background-color: rgba(244, 173, 115, 0.449);
+}
+.details{
+padding: 20px;
+}
+#contact h2{
+  font-size: xx-large;
+  padding-top: 30px;
+}
+.container-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 50px;
+  height: 100%;
+  
+  
+}
+.opening-times, .awards{
+  border-right: 1px solid;
+  padding-right: 150px;
+  
+}
+
+
