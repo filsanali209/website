@@ -238,14 +238,28 @@ padding: 20px;
 .res-secton{
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
+}
+.book-a-table{
+  font-size: x-large;
 }
 .inputs-for-res{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  
+  gap: 10px;
+  align-items: center;
   
   
 }
 .date-input, .time-input, .partysize-input{
-  padding: 20px;
+  padding: 10px;
+}
+label{
+  display: block;
+  padding-bottom: 10px;
+  font-size: large;
+}
+#date, #time, #party-size{
+  padding: 5px 10px;
+  
 }
