@@ -194,7 +194,7 @@ padding: 20px;
   font-size: xx-large;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
-  padding: 30px;
+  padding: 120px;
   background: url(images/food/food-2.jpeg);
   background-size: 90%;
   background-position: center;
@@ -264,6 +264,7 @@ label{
   flex-direction: row;
   width: 100%;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .owner-1{
   
