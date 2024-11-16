@@ -203,6 +203,12 @@ padding: 20px;
   
   
 }
+.details{
+  font-size: large;
+}
+.details a{
+  color: rgb(221, 108, 15);
+}
 .opening-times, .awards{
   border-right: 1px solid;
   padding-right: 150px;
