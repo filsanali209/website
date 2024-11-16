@@ -66,9 +66,9 @@ nav ul li a{
   text-transform: uppercase;
 }
 nav ul li a:hover{
-  color: rgb(234, 209, 175);
+  color: rgb(221, 108, 15);
   text-decoration: underline;
-  color: rgb(234, 209, 175);
+  color: rgb(221, 108, 15);
 }
 
 .social-media-links{
@@ -85,6 +85,9 @@ nav ul li a:hover{
 .fa-brands{
   color: black ;
 }
+.fa-brands:hover{
+  color: rgb(221, 108, 15);;
+}
 .index-header{
   background-color: transparent;
 }
@@ -99,8 +102,16 @@ nav ul li a:hover{
   font-weight: bold;
   font-size: large;
 }
+.index-header nav ul li a:hover{
+  color: rgb(221, 108, 15);
+  text-decoration: underline;
+  color: rgb(221, 108, 15);
+}
 .index-header .fa-brands{
   color: white;
+}
+.index-header .fa-brands:hover{
+  color: rgb(221, 108, 15);;
 }
 
 .change{
@@ -209,7 +220,7 @@ padding: 20px;
 .details a{
   color: rgb(221, 108, 15);
 }
-.opening-times, .awards{
+.opening-times .awards{
   border-right: 1px solid;
   padding-right: 150px;
   
@@ -246,7 +257,7 @@ padding: 20px;
   align-items: center;
   padding-bottom: 20px;
 }
-.date-input, .time-input, .partysize-input{
+.date-input .time-input .partysize-input{
   padding: 10px;
 }
 label{
@@ -306,6 +317,6 @@ label{
 .owner-2{
   width: 33.3%;
 }
-.owner-1 img, .owner-2 img{
+.owner-1 img .owner-2 img{
   position: relative;
 }
