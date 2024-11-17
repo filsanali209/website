@@ -279,7 +279,7 @@ footer{
   align-items: center;
   padding-bottom: 40px;
 }
-.date-input .time-input .partysize-input{
+.date-input, .time-input, .partysize-input{
   padding: 10px;
 }
 label{
@@ -311,6 +311,25 @@ label{
   align-items: center;
   padding-bottom: 40px;
 }
+#fname, #lname, #phone, #email{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 80px;
+
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
+}
+.back-button, .submit-button{
+  padding: 10px 30px;
+  font-size: medium;
+  margin-bottom: 80px;
+  justify-self: center;
+  align-self: center;
+  width: auto;
+}
+
 .about-container{
   display: flex;
   flex-direction: column;
