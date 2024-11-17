@@ -33,3 +33,21 @@ if (document.documentElement.scrollTop > 0) {
   header.classList.remove("change");
 }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const resSection = document.querySelector('.res-section');
+  const personalDetailsSection = document.querySelector('.personal-details-section');
+  const nextButton = document.querySelector('.next-button')
+  const backButton = document.querySelector('.back-button')
+
+  nextButton.addEventListener('click', () => {
+    resSection.style.display = 'none';
+    personalDetailsSection.style.display = 'flex'
+  });
+
+  backButton.addEventListener('click', () => {
+    resSection.style.display = 'grid'
+    personalDetailsSection.style.display = 'none';
+  });
+
+});

@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/d49d7780b4.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -23,7 +24,7 @@
         <li><a href="reservations.html">Reservations</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="index.html#reviews">Reviews</a></li>
-        <li><a href="index.html#contact">Contact Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </nav>
 
@@ -59,6 +60,8 @@
       <h2>Reservations</h2>
     </div>
     <p class="info">We are happy to accommodate dietary requirements. <br> Please just make a note in your reservation or let us know upon arrival. <br> Lancaster’s is on ground level, with an accessible bathroom situated on the same floor.</p>
+
+
     <div class="res-section">
       <p class="book-a-table">BOOK A TABLE</p>
       <div class="inputs-for-res">
@@ -68,7 +71,7 @@
         </div>
         <div class="time-input">
           <label for="time">Time:</label>
-            <select name="time" id="time">
+            <select name="time" id="time" required>
               <option value="0800">8:00 AM</option>
               <option value="0830">8:30 AM</option>
               <option value="0900">9:00 AM</option>
@@ -102,7 +105,7 @@
         </div>
         <div class="partysize-input">
           <label for="party-size">Party size:</label>
-            <select name="party-size" id="party-size">
+            <select name="party-size" id="party-size" required>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -122,13 +125,21 @@
         </i>
       </button>
     </div>
+
+    <div class="personal-details-section">
+      <h2>Your Details</h2>
+      <input type="text" id="fname" placeholder="First name"
+      required>
+      <input type="text" id="lname" placeholder="Surname"
+      required>
+      <input type="tel" id="phone" placeholder="Phone number" required>
+      <input type="email" id="email" placeholder="email" required>
+      <button class="back-button">Back</button>
+      <button class="submit-button">Submit</button>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-      <div class="details">
-        <p>For collaborations please contact <a href="marketing@lancasters.com">marketing@lancasters.com </a> . <br> For business opportunities please contact Robert Lancaster at <a href="office@lancasters.com">office@lancasters.com</a>.</p>
-      </div>
+  <footer>
     <div class="container-contact">
       <div class="opening-times">
         <b>Opening times:</b>
@@ -155,7 +166,8 @@
         </address>
       </div>
     </div>
-  </section>
-  <footer>©2024 Lancaster's Restaurant</footer>
+    <div class="trademark">©2024 Lancaster's Restaurant</div> 
+  </footer>
+
 </body>
 </html>

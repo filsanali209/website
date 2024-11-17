@@ -159,8 +159,7 @@ nav ul li a:hover{
 
 
 #reviews{
-  padding: 50px;
-  
+  padding: 50px; 
 }
 #reviews h2{
   font-size: xx-large;
@@ -265,8 +264,12 @@ footer{
   margin-top: 20px;
   font-size: large;
 }
+.res-section{
+  display: block;
+}
 .book-a-table{
   font-size: x-large;
+  padding: 20px;
 }
 
 
@@ -274,7 +277,7 @@ footer{
   display: grid;
   gap: 10px;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .date-input .time-input .partysize-input{
   padding: 10px;
@@ -288,18 +291,26 @@ label{
   padding: 5px 10px;
   
 }
+
 .next-button{
   padding: 10px 30px;
   font-size: medium;
-  margin-bottom: 30px;
-
-  
+  margin-bottom: 80px;
+  justify-self: center;
+  align-self: center;
+  width: auto;
 }
 .next-button:hover{
   background-color: rgb(45, 44, 44);
   color: white;
 }
-
+.personal-details-section{
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 40px;
+}
 .about-container{
   display: flex;
   flex-direction: column;
