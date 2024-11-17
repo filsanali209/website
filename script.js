@@ -39,15 +39,36 @@ document.addEventListener('DOMContentLoaded', () => {
   const personalDetailsSection = document.querySelector('.personal-details-section');
   const nextButton = document.querySelector('.next-button')
   const backButton = document.querySelector('.back-button')
+  
+  
+   
+   function validateForm() {
+    let x = document.forms["res-form"]["date"].value;  
+    let y = document.forms["res-form"]["time"].value;  
+    let z = document.forms["res-form"]["party-size"].value;  
+    
+    
+    if (x == "" || y == "" || z == "") {
+      alert("All fields are required!");
+      return false; 
+    } else {
+      return true; 
+    }
+  }
 
-  nextButton.addEventListener('click', () => {
-    resSection.style.display = 'none';
-    personalDetailsSection.style.display = 'flex'
+  
+  nextButton.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    
+   
+    if (validateForm()) {
+      resSection.style.display = 'none';  
+      personalDetailsSection.style.display = 'flex';  
+    }
   });
-
+  
   backButton.addEventListener('click', () => {
-    resSection.style.display = 'grid'
+    resSection.style.display = 'grid';
     personalDetailsSection.style.display = 'none';
   });
-
 });
